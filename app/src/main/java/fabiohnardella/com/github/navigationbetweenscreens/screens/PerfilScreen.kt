@@ -17,16 +17,15 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
-fun LoginScreen(modifier: Modifier = Modifier, navController: NavController) {
+fun PerfilScreen(modifier: Modifier = Modifier, navController: NavController) {
     Box(
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFFEE155C))
+            .background(Color(0xFF329F6B))
             .padding(32.dp)
-
     ) {
         Text(
-            text = "Login",
+            text = "PERFIL",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White
@@ -37,12 +36,10 @@ fun LoginScreen(modifier: Modifier = Modifier, navController: NavController) {
             modifier = Modifier.align(Alignment.Center)
         ) {
             Text(
-                text = "ENTRAR",
+                text = "Voltar",
                 fontSize = 20.sp,
                 color = Color.Blue
             )
         }
     }
-
-
 }

@@ -17,32 +17,30 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
-fun LoginScreen(modifier: Modifier = Modifier, navController: NavController) {
+fun PedidosScreen(modifier: Modifier = Modifier, navController: NavController) {
     Box(
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFFEE155C))
+            .background(Color(0xFFFA9A9A9))
             .padding(32.dp)
-
     ) {
         Text(
-            text = "Login",
+            text = "PEDIDOS",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White
         )
+
         Button(
             onClick = { navController.navigate("menu") },
             colors = ButtonDefaults.buttonColors(Color.White),
             modifier = Modifier.align(Alignment.Center)
         ) {
             Text(
-                text = "ENTRAR",
+                text = "Voltar",
                 fontSize = 20.sp,
                 color = Color.Blue
             )
         }
     }
-
-
 }
